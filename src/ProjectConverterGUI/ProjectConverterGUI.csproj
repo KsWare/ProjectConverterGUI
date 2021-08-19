@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="KsWare.Presentation.Behavior.Common" Version="0.19.22" />
+    <PackageReference Include="KsWare.Presentation.Labs" Version="0.19.22" />
+    <PackageReference Include="KsWare.Presentation.Lite" Version="0.2.0" />
+    <PackageReference Include="KsWare.Presentation.ViewModelFramework" Version="0.19.22" />
+  </ItemGroup>
+
+</Project>
