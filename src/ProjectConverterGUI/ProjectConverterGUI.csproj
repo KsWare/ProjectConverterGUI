@@ -26,6 +26,8 @@ Supports upgrade-assistant, Project2015To2017.Migrate2019.Tool</Description>
 
   <ItemGroup>
     <None Remove="app.ico" />
+    <None Remove="ChangeLog.md" />
+    <None Remove="README.md" />
     <None Include="..\..\packageicon.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
