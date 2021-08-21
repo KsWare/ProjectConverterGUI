@@ -4,13 +4,43 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace>KsWare.ProjectConverterGUI</RootNamespace>
+    <Version>0.1.0</Version>
+    <AssemblyVersion>0.1.0</AssemblyVersion>
+    <Authors>SchreinerK</Authors>
+    <Company>KsWare</Company>
+    <Copyright>Copyright © 2021 by KsWare. All rights reserved.</Copyright>
+    <PackageLicenseExpression>LGPL-3.0-only</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/KsWare/KsWare.PrivilegedExecutor</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/KsWare/KsWare.PrivilegedExecutor</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageIcon>packageicon.png</PackageIcon>
+    <PackageIconUrl />
+    <FileVersion>0.1.0</FileVersion>
+    <Description>GUI for .net project converters. 
+Supports upgrade-assistant, Project2015To2017.Migrate2019.Tool</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>converter csproj dot-net .net 2017 2019</PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="app.ico" />
+    <None Include="..\..\packageicon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="KsWare.Presentation.Behavior.Common" Version="0.19.22" />
     <PackageReference Include="KsWare.Presentation.Labs" Version="0.19.22" />
     <PackageReference Include="KsWare.Presentation.Lite" Version="0.2.0" />
     <PackageReference Include="KsWare.Presentation.ViewModelFramework" Version="0.19.22" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="app.ico" />
   </ItemGroup>
 
 </Project>
